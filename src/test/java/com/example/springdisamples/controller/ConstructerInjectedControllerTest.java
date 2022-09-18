@@ -1,10 +1,8 @@
 package com.example.springdisamples.controller;
 
-import com.example.springdisamples.service.GreetingServiceImpl;
+import com.example.springdisamples.service.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ConstructerInjectedControllerTest {
 
@@ -13,7 +11,7 @@ class ConstructerInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-        controller = new ConstructerInjectedController(new GreetingServiceImpl());
+        controller = new ConstructerInjectedController(new ConstructorGreetingService());
     }
 
     @Test

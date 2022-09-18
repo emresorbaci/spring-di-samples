@@ -16,8 +16,8 @@ public class SpringDiSamplesApplication {
 
 		TestController testController = (TestController) ctx.getBean("testController");
 
-		String greeting = testController.sayHello();
-		System.err.println(greeting);
+		System.err.println("-------primary ");
+		System.err.println(testController.sayHello());
 
 
 		System.err.println("-------property");
